@@ -7,9 +7,10 @@ body {
 }
 
 header {
-    background-color: #0a3d62;
+    background-color: #0a620a;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    margin-left: 10px
 }
 
 header nav a {
@@ -22,3 +23,4 @@ section {
     padding: 40px 20px;
     text-align: center;
 }
+
