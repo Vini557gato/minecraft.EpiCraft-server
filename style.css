@@ -1,16 +1,118 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e1e1e;
+    background-image: url("https://github.com/Vini557gato/minecraft.EpiCraft-server/blob/main/fundo.png?raw=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     color: #fff;
     margin: 0;
     padding: 0;
 }
 
-header {
+.header {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+
+body, html {
+margin: 0;
+padding: 0;
+}
+
+    .conteudo {
+	display: block;
+	text-align: space-around;
+	margin: 0 10px;
+	max-width: 100%
+	box-sizing: border-box;
+    }
+
+    .sobre, .regras {
+	width: 100%;
+	margin-bottom: 20px;
+    }
+}
+
+.conteudo {
+display: flex;
+justify-content: center;
+position: relative;
+z-index: 1;
+height: 120px;
+}
+
+.barra {
     background-color: #0a620a;
-    padding: 20px;
+    width: 100%;
+    height: 120px;
+    top: 0px;
+    position: absolute;
+    z-index: 0;
+}
+
+.borda {
+    background-color: #084a08;
+    width: 100%;
+    height: 5px;
+    top: 120px;
+    position: absolute;
+    z-index: 0;
+}
+
+
+.discord {
+    padding: 8px; 14px;
+    width: 12px;
+    height: 20px;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    z-index: 10;
+}
+
+.discord:hover {
+background-color: #084a08;
+background-position: 0px; 0px;
+color: #0a620a;
+border-radius: 3px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    right: 18px;
+    top: 2px;
+    z-index: 10;
+}
+
+.menu {
+    padding: 0px;
+    position: relative;
+    bottom: 25px;
+    text-align: center;
+}
+
+.titulo {
+    font-weight: bold;
+    padding: 5px;
+    position: relative;
+    right: 38%;
+    top: 0px;
     text-align: left;
-    margin-left: 10px
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: relative;
+    top: 20px;
+    right: 38%;
 }
 
 header nav a {
@@ -19,8 +121,26 @@ header nav a {
     text-decoration: none;
 }
 
-section {
-    padding: 40px 20px;
+.aba {
     text-align: center;
+    padding: 10px 20px;
+}
+.regras {
+    padding: 50px 0px;
 }
 
+a span {
+display: block;
+}
+
+.linha3 {
+position: absolute;
+top: 10px;
+right: 10px;
+}
+
+.aviso {
+position: fixed;
+bottom: 0px;
+left: 10px;
+}
