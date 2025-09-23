@@ -3,37 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EpiCraft</title>
     <link rel="stylesheet" href="style.css">
+	<title>EpiCraft</title>
+	<link rel="icon" href="https://github.com/Vini557gato/minecraft.EpiCraft-server/blob/main/logo.png?raw=true">
+
 </head>
 <body>
+
+<div class="aviso">*Fique ciente que este site está em desenvolvimento!*</div>
+
     <header>
+<header class="header">
+    <div class="barra"></div>
+    <div class="borda"></div>
+</header>
+
+<div class="conteudo">
+    <img src="https://github.com/Vini557gato/minecraft.EpiCraft-server/blob/main/logo.png?raw=true" class="logo">
+    <div class="titulo">
+	<title>EpiCraft</title>
         <h1>EpiCraft</h1>
-        <nav>
-            <a href="#sobre">Sobre</a>
-            <a href="#regras">Regras</a>
-            <a href="#contato">Contato</a>
+    </div>
+</div>
+        <nav class="menu">
+            <a href="#creditos">Créditos</a>
+            <a href="https://discord.gg/PC3uVMk6tV" target="_blank" class="discord">Discord</a><img src="https://cdn.simpleicons.org/discord/5865F2" alt="Discord Logo" class="icon">
+            <a href="#contato" class="botao-contato" onclick="abrirContato('contato')">Contato</a>
         </nav>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre o servidor</h2>
-        <p>Servidor de Minecraft inspirado no Exército Brasileiro.</p>
+<div class="aba">
+    <section class="sobre" id="sobre">
+        <h2>Sobre o EpiCraft.</h2>
+        <p>O EpiCraft é um servidor de Minecraft, inspirado em Exército Brasileiro, que visa simular um batalhão dentro da plataforma Minecraft.</p>
     </section>
 
-    <section id="regras">
-        <h2>Regras</h2>
-        <ul>
-            <li>Sem trapaças</li>
-            <li>Respeitar todos</li>
-        </ul>
-    </section>
+</div>
 
-    <footer>
-        <p>© 2025 EpiCraft</p>
-    </footer>
+    <div class="footer">
+        <a class="linha3">© EpiCraft 2025</a>
+    </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
-
