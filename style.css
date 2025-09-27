@@ -1,146 +1,154 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url("https://github.com/Vini557gato/minecraft.EpiCraft-server/blob/main/fundo.png?raw=true");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    color: #fff;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("https://github.com/Vini557gato/minecraft.EpiCraft-server/blob/main/fundo.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
-    position: relative;
-}
-
-@media (max-width: 768px) {
-
-body, html {
-margin: 0;
-padding: 0;
-}
-
-    .conteudo {
-	display: block;
-	text-align: space-around;
-	margin: 0 10px;
-	max-width: 100%
-	box-sizing: border-box;
-    }
-
-    .sobre, .regras {
-	width: 100%;
-	margin-bottom: 20px;
-    }
+  position: relative;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .conteudo {
-display: flex;
-justify-content: center;
-position: relative;
-z-index: 1;
-height: 120px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.titulo h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .barra {
-    background-color: #0a620a;
-    width: 100%;
-    height: 120px;
-    top: 0px;
-    position: absolute;
-    z-index: 0;
+  background-color: #0a620a;
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .borda {
-    background-color: #084a08;
-    width: 100%;
-    height: 5px;
-    top: 120px;
-    position: absolute;
-    z-index: 0;
+  background-color: #084a08;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  z-index: 0;
 }
 
-
-.discord {
-    padding: 8px; 14px;
-    width: 12px;
-    height: 20px;
-    position: relative;
-    right: 0px;
-    top: 0px;
-    z-index: 10;
-}
-
-.discord:hover {
-background-color: #084a08;
-background-position: 0px; 0px;
-color: #0a620a;
-border-radius: 3px;
-font-weight: bold;
-transition: 0.3s;
-}
-
-.icon {
-    width: 15px;
-    height: 15px;
-    position: relative;
-    right: 18px;
-    top: 2px;
-    z-index: 10;
-}
-
+/* MENU */
 .menu {
-    padding: 0px;
-    position: relative;
-    bottom: 25px;
-    text-align: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 10px;
+  display: flex;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: row;
 }
 
-.titulo {
-    font-weight: bold;
-    padding: 5px;
-    position: relative;
-    right: 38%;
-    top: 0px;
-    text-align: left;
+.menu a {
+  padding: 8px 14px;
+  margin: 0 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 5px;
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
-    display: block;
-    position: relative;
-    top: 20px;
-    right: 38%;
+.menu a:hover {
+  background-color: #084a08;
 }
 
-header nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
+.menu .active {
+  background-color: #0a620a;
+  font-weight: bold;
+  animation: pulse 0.3s ease;
+}
+
+/* ======== ABAS ======== */
+.abas {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
 }
 
 .aba {
-    text-align: center;
-    padding: 10px 20px;
-}
-.regras {
-    padding: 50px 0px;
+  display: none;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-a span {
-display: block;
+.aba.ativa {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .linha3 {
-position: absolute;
-top: 10px;
-right: 10px;
+  position: absolute;
+  color: #fff;
+  z-index: 3;
+  top: 0px;
+  right: 0px;
+}
+
+.version {
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  position: fixed;
+  padding: 5px;
+  flex-direction: row;
+  right: 0px;
+  bottom: 0px;
 }
 
 .aviso {
-position: fixed;
-bottom: 0px;
-left: 10px;
+  font-size: 2vh;
+  white-space: nowrap;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  padding: 0px;
+  bottom: 1vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inicio {
+
+}
+
+/* Animação botão */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
